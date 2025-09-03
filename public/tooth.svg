@@ -1,0 +1,117 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main tooth gradient -->
+    <linearGradient id="toothMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#e2e8f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Enamel highlight gradient -->
+    <linearGradient id="enamelHighlight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    
+    <!-- Shadow gradient -->
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:0.1" />
+    </radialGradient>
+    
+    <!-- Surface texture -->
+    <pattern id="toothTexture" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.5" fill="#e2e8f0" opacity="0.3"/>
+      <circle cx="5" cy="15" r="0.3" fill="#cbd5e1" opacity="0.2"/>
+      <circle cx="15" cy="5" r="0.4" fill="#f1f5f9" opacity="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background shadow -->
+  <ellipse cx="150" cy="280" rx="80" ry="20" fill="url(#shadowGrad)"/>
+  
+  <!-- Main tooth body - more anatomical shape -->
+  <path d="M150 40 
+           C 190 40, 220 55, 235 85
+           C 250 115, 255 145, 245 170
+           C 235 195, 210 215, 180 225
+           C 150 235, 120 225, 90 215
+           C 60 195, 45 170, 55 145
+           C 65 115, 80 85, 110 55
+           C 130 40, 150 40, 150 40 Z" 
+        fill="url(#toothMain)" 
+        stroke="#94a3b8" 
+        stroke-width="1.5"/>
+  
+  <!-- Tooth crown with more detail -->
+  <path d="M150 50 
+           C 180 50, 200 60, 215 85
+           C 230 110, 235 135, 230 160
+           C 225 185, 205 200, 175 210
+           C 145 220, 115 210, 85 200
+           C 55 185, 50 160, 65 135
+           C 80 110, 95 85, 125 60
+           C 145 50, 150 50, 150 50 Z" 
+        fill="url(#enamelHighlight)" 
+        opacity="0.6"/>
+  
+  <!-- Surface grooves and details -->
+  <path d="M150 80 Q 180 85, 200 100 Q 210 120, 205 140" 
+        fill="none" 
+        stroke="#cbd5e1" 
+        stroke-width="1" 
+        opacity="0.6"/>
+  
+  <path d="M150 80 Q 120 85, 100 100 Q 90 120, 95 140" 
+        fill="none" 
+        stroke="#cbd5e1" 
+        stroke-width="1" 
+        opacity="0.6"/>
+  
+  <!-- Central groove -->
+  <path d="M150 70 Q 150 90, 150 110 Q 150 130, 150 150" 
+        fill="none" 
+        stroke="#94a3b8" 
+        stroke-width="0.8" 
+        opacity="0.4"/>
+  
+  <!-- Enamel surface texture -->
+  <rect x="0" y="0" width="300" height="300" fill="url(#toothTexture)" opacity="0.1"/>
+  
+  <!-- Major highlights -->
+  <ellipse cx="140" cy="60" rx="12" ry="6" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="160" cy="70" rx="8" ry="4" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Subtle surface variations -->
+  <ellipse cx="150" cy="120" rx="30" ry="18" fill="none" stroke="#f1f5f9" stroke-width="0.5" opacity="0.4"/>
+  <ellipse cx="150" cy="140" rx="25" ry="15" fill="none" stroke="#e2e8f0" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Edge details -->
+  <path d="M120 50 Q 110 60, 105 75" fill="none" stroke="#94a3b8" stroke-width="0.8" opacity="0.5"/>
+  <path d="M180 50 Q 190 60, 195 75" fill="none" stroke="#94a3b8" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Bottom root area -->
+  <path d="M150 220 
+           C 130 225, 110 230, 95 235
+           C 80 240, 70 245, 65 250
+           C 60 255, 60 260, 65 265
+           C 70 270, 80 275, 95 280
+           C 110 285, 130 290, 150 295
+           C 170 290, 190 285, 205 280
+           C 220 275, 230 270, 235 265
+           C 240 260, 240 255, 235 250
+           C 230 245, 220 240, 205 235
+           C 190 230, 170 225, 150 220 Z" 
+        fill="#e2e8f0" 
+        stroke="#cbd5e1" 
+        stroke-width="1"/>
+  
+  <!-- Root texture -->
+  <ellipse cx="150" cy="250" rx="35" ry="20" fill="none" stroke="#cbd5e1" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Final highlights -->
+  <circle cx="135" cy="75" r="3" fill="#ffffff" opacity="0.7"/>
+  <circle cx="165" cy="85" r="2" fill="#ffffff" opacity="0.5"/>
+</svg>
